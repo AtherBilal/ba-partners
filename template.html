@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{meta}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{meta}}">
+<meta property="og:image" content="https://partners.bapropertyholdings.com/img/{{og}}">
+<link rel="icon" href="/img/favicon.png">
+<link rel="preload" as="image" href="/img/{{hero}}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/lp.css">
+<script>
+/* ---- Tracking config: paste the Meta Pixel ID to turn on PageView + Lead events ---- */
+window.BA_PIXEL_ID = "";
+window.BA_LEAD_EMAIL = "info@bapropertyholdings.com";
+</script>
+<script src="/lp.js" defer></script>
+</head>
+<body data-offer="{{offer}}">
+<header class="bar">
+  <div class="wrap bar-in">
+    <img class="logo" src="/img/logo.png" alt="BA Properties" width="120" height="44">
+    <a class="call" href="tel:+16365795617" data-track="call">Call (636) 579-5617</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">{{kicker}}</p>
+        <h1>{{h1}}</h1>
+        <p class="sub">{{sub}}</p>
+        <ul class="ticks">{{ticks}}</ul>
+        <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span> <b>4.82</b> from 1,852 guest reviews across our 12 homes</div>
+      </div>
+
+      <div class="card" id="form-card">
+        <form id="lead" novalidate>
+          <div class="progress" aria-hidden="true"><span></span></div>
+          <p class="step-count" id="step-count">Step 1 of 3</p>
+
+          <fieldset class="step" data-step="1">
+            <legend>{{q1}}</legend>
+            <label class="field">Property address<input name="address" autocomplete="street-address" placeholder="Street address, city" required></label>
+            <p class="q">{{q1b_label}}</p>
+            <div class="opts" role="radiogroup">{{q1b}}</div>
+            <button type="button" class="btn next">{{cta1}} →</button>
+          </fieldset>
+
+          <fieldset class="step" data-step="2" hidden>
+            <legend>A little about the property</legend>
+            <p class="q">Bedrooms</p>
+            <div class="opts row" role="radiogroup">
+              <label><input type="radio" name="bedrooms" value="Studio" required><span>Studio</span></label>
+              <label><input type="radio" name="bedrooms" value="1"><span>1</span></label>
+              <label><input type="radio" name="bedrooms" value="2"><span>2</span></label>
+              <label><input type="radio" name="bedrooms" value="3"><span>3</span></label>
+              <label><input type="radio" name="bedrooms" value="4+"><span>4+</span></label>
+            </div>
+            <p class="q">{{q2_label}}</p>
+            <div class="opts" role="radiogroup">{{q2}}</div>
+            <div class="nav"><button type="button" class="back">← Back</button><button type="button" class="btn next">Continue →</button></div>
+          </fieldset>
+
+          <fieldset class="step" data-step="3" hidden>
+            <legend>{{q3}}</legend>
+            <label class="field">Full name<input name="name" autocomplete="name" required></label>
+            <label class="field">Mobile phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+            <label class="field">Email<input name="email" type="email" autocomplete="email" required></label>
+            <div class="nav"><button type="button" class="back">← Back</button><button type="submit" class="btn">{{cta3}}</button></div>
+            <p class="fine">No obligation. We reply within one business day, usually the same day.</p>
+          </fieldset>
+
+          <div class="done" hidden>
+            <div class="done-icon" aria-hidden="true">✓</div>
+            <h2>Got it, thank you.</h2>
+            <p>{{done}}</p>
+            <a class="btn ghost" href="tel:+16365795617" data-track="call">Prefer to talk now? Call (636) 579-5617</a>
+          </div>
+          <p class="err" role="alert" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="Some of our homes">
+    <div class="photos">
+      <figure><img src="/img/2930-hickory-01.jpg" alt="Living room, St. Louis" loading="lazy"><figcaption>St. Louis · 4.77★</figcaption></figure>
+      <figure><img src="/img/2622-monon-grand-01.jpg" alt="Patio with hot tub, Indianapolis" loading="lazy"><figcaption>Indianapolis · 4.86★</figcaption></figure>
+      <figure><img src="/img/greenest-01.jpg" alt="Living room, The Grove, St. Louis" loading="lazy"><figcaption>The Grove · 4.91★</figcaption></figure>
+      <figure><img src="/img/2e-the-heart-of-mardi-gras-sou-01.jpg" alt="Living room, Soulard, St. Louis" loading="lazy"><figcaption>Soulard · 4.86★</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <p class="kicker">How it works</p>
+      <h2>{{how_h}}</h2>
+      <ol class="how">{{how}}</ol>
+    </div>
+  </section>
+
+  <section class="sec alt">
+    <div class="wrap two">
+      <div>
+        <p class="kicker">{{cover_k}}</p>
+        <h2>{{cover_h}}</h2>
+        <ul class="checks">{{cover}}</ul>
+      </div>
+      <div class="quotes">
+        <p class="kicker">What our guests say</p>
+        <figure><blockquote>“I travel to St. Louis a few times a year, and I’ll definitely be staying with Anna again. The place was very clean, comfortable, and inviting.”</blockquote><figcaption>Airbnb review · Soulard · Oct 2026</figcaption></figure>
+        <figure><blockquote>“We stayed here while our granddaughter went through an Operation at Children’s Hospital… The place is very clean and well equipped with everything we need.”</blockquote><figcaption>Airbnb review · The Grove · Oct 2026</figcaption></figure>
+        <figure><blockquote>“I brought 8 FFA members with me to National Convention for a 4 night stay and it was perfect!”</blockquote><figcaption>Airbnb review · Indianapolis · Oct 2026</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap narrow">
+      <p class="kicker">Questions</p>
+      <h2>Straight answers</h2>
+      <div class="faq">{{faq}}</div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap narrow">
+      <h2>{{final_h}}</h2>
+      <p>{{final_p}}</p>
+      <a class="btn big" href="#form-card" data-track="final-cta">{{cta1}}</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">BA Property Holdings® · 2 Bars Trading LLC · St. Louis, MO · Indianapolis, IN · <a href="https://www.bapropertyholdings.com/">bapropertyholdings.com</a></div>
+</footer>
+
+<a class="sticky" href="#form-card" data-track="sticky-cta">{{sticky}}</a>
+</body>
+</html>
